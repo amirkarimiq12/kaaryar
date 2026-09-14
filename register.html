@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت‌نام | بازارینو</title>
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+           <div class="header__right">
+            <a href="./products.html" class="header__logo">بازارینو</a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">خانه</a></li>
+                    <li class="header__menu-item"><a href="./products.html" class="header__menu-link">فروشگاه</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">دسته‌بندی‌ها</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">درباره ما</a></li>
+                </ul>
+            </nav>
+        </div>
+
+          <div class="header__actions">
+            <a href="#" class="header__cart-link">سبد خریذ</a>
+            <a href="./register.html" class="header__login-link">ورود</a>
+        </div>
+    </div>
+</header>
+        </div>
+    </header>
+    <main class="main-content main-content--center">
+        <section class="register-card">
+            <div class="register-card__header">
+                <h1 class="register-card__title">ساخت حساب کاربری</h1>
+                <p class="register-card__subtitle">برای خرید سریع‌تر، حساب بازارینو را بسازید.</p>
+            </div>
+
+            <form class="register-form" action="#" method="post">
+                <div class="form-group">
+                    <label class="form-group__label" for="email-input">ایمیل</label>
+                    <input 
+                        type="email" 
+                        class="form-group__input" 
+                        placeholder="name@example.com" 
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label">شماره همراه</label>
+                    <input 
+                        type="tel" 
+                        class="form-group__input" 
+                        placeholder="۰۹۱۲۳۴۵۶۷۸۹" 
+                        pattern="^09[0-9]{9}$" 
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label">رمز عبور</label>
+                    <input 
+                        type="password" 
+                        class="form-group__input" 
+                        placeholder="••••••••" 
+                        minlength="8" 
+                        maxlength="64" 
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <label class="form-group__label">تکرار رمز عبور</label>
+                    <input 
+                        type="password" 
+                        class="form-group__input" 
+                        placeholder="رمز عبور را دوباره وارد کنید" 
+                        minlength="8" 
+                        maxlength="64" 
+                        required
+                    >
+                </div>
+
+                <div class="register-form__actions">
+                    <button type="submit" class="button button--primary">ثبت‌نام</button>
+                    <button type="reset" class="button button--secondary">پاک کردن</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <p class="footer__text">بازارینو؛ خرید ساده و مطمئن</p>
+            </div>
+            
+            <ul class="footer__links">
+                <li class="footer__link-item"><a href="#" class="footer__link">پشتیبانی</a></li>
+                <li class="footer__link-item"><a href="#" class="footer__link">قوانین و شرایط</a></li>
+                <li class="footer__link-item"><a href="#" class="footer__link">اینستاگرام</a></li>
+            </ul>
+
+            <div class="footer__copyright">
+                <p class="footer__copy-text">© ۱۴۰۵</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

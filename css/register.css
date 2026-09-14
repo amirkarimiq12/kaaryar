@@ -1,0 +1,423 @@
+
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Vazirmatn;
+  src: url('fonts/webfonts/Vazirmatn-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #F8FAFC;
+  color: #14213D;
+  direction: rtl;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 16px 0;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0F766E;
+  text-decoration: none;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 24px; 
+  list-style: none;
+}
+
+.header__menu-link {
+  font-size: 14px;
+  color: #14213D;
+  text-decoration: none;
+}
+.header__menu-link:hover {
+  color: #0F766E;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__cart-link {
+  display: inline-flex;
+  align-items: center;
+  background-color: #E6F4F1;
+  color: #0F766E;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header__cart-badge {
+  background-color: #0F766E;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.header__login-link {
+  font-size: 14px;
+  color: #14213D;
+  text-decoration: none;
+}
+
+.main-content {
+  flex: 1;
+  padding: 48px 16px;
+}
+
+.main-content--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  padding: 32px 24px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.register-card__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.register-card__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #14213D;
+  margin-bottom: 8px;
+}
+
+.register-card__subtitle {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group__label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #14213D;
+}
+
+.form-group__input {
+  width: 100%;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  color: #14213D;
+  transition: all 0.2s ease;
+  direction: ltr;
+  text-align: right;
+}
+
+.form-group__input:focus {
+  outline: none;
+  border-color: #0F766E;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.15);
+}
+
+.form-group__input:not(:placeholder-shown):valid {
+  border-color: #10B981;
+}
+
+.form-group__input:not(:placeholder-shown):invalid {
+  border-color: #EF4444;
+}
+
+.register-form__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.button {
+  flex: 1;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.button--primary {
+  background-color: #0F766E;
+  color: #FFFFFF;
+  border: 1px solid #0F766E;
+}
+
+.button--primary:hover {
+  background-color: #0D655E;
+}
+
+.button--secondary {
+  background-color: #FFFFFF;
+  color: #0F766E;
+  border: 1px solid #0F766E;
+}
+
+.button--secondary:hover {
+  background-color: #F0FDFA;
+}
+
+.footer {
+  background-color: #14213D;
+  color: #FFFFFF;
+  padding: 24px 0;
+  margin-top: auto;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__link {
+  color: #E2E8F0;
+  transition: color 0.2s;
+}
+
+.footer__link:hover {
+  color: #2DD4BF;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0F172A;
+    color: #E2E8F0;
+  }
+
+  .header {
+    background-color: #1E293B;
+    border-bottom-color: #334155;
+  }
+
+  .header__logo {
+    color: #2DD4BF;
+  }
+
+  .header__menu-link,
+  .header__login-link {
+    color: #E2E8F0;
+  }
+
+ .header__cart-link {
+    background-color: rgba(45, 212, 191, 0.15);
+    color: #2DD4BF;
+  }
+
+  .register-card {
+    background-color: #1E293B;
+    border-color: #334155;
+  }
+
+  .register-card__title {
+    color: #E2E8F0;
+  }
+
+  .register-card__subtitle {
+    color: #94A3B8;
+  }
+
+  .form-group__label {
+    color: #E2E8F0;
+  }
+
+  .form-group__input {
+    background-color: #1E293B;
+    border-color: #334155;
+    color: #E2E8F0;
+  }
+
+  .form-group__input:focus {
+    border-color: #2DD4BF;
+    box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.2);
+  }
+
+  .button--primary {
+    background-color: #2DD4BF;
+    color: #0F172A;
+    border-color: #2DD4BF;
+  }
+
+  .button--primary:hover {
+    background-color: #26B3A2;
+  }
+
+  .button--secondary {
+    background-color: transparent;
+    color: #2DD4BF;
+    border-color: #334155;
+  }
+
+  .button--secondary:hover {
+    background-color: #334155;
+  }
+
+  .footer {
+    background-color: #0B1120;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header__menu {
+    gap: 12px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .register-card {
+    padding: 24px 16px;
+  }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه | بازارینو</title>
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+<body class="page">
+    <header class="header">
+        <div class="header__container">
+           <div class="header__right">
+            <a href="./products.html" class="header__logo">بازارینو</a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">خانه</a></li>
+                    <li class="header__menu-item"><a href="./products.html" class="header__menu-link">فروشگاه</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">دسته‌بندی‌ها</a></li>
+                    <li class="header__menu-item"><a href="#" class="header__menu-link">درباره ما</a></li>
+                </ul>
+            </nav>
+        </div>
+
+          <div class="header__actions">
+            <a href="#" class="header__cart-link">سبد خریذ</a>
+            <a href="./register.html" class="header__login-link">ورود</a>
+        </div>
+    </div>
+</header>
+<main class="main-content">
+        <div class="shop-container">
+            <div class="shop-header">
+                <div class="shop-header__breadcrumb">خانه / فروشگاه</div>
+                <h1 class="shop-header__title">فروشگاه</h1>
+                <p class="shop-header__subtitle">محصولات منتخب را با خیال راحت مقایسه و انتخاب کنید.</p>
+            </div>
+            <div class="shop-layout">
+                <aside class="sidebar">
+                    <div class="sidebar__card">
+                        <h2 class="sidebar__title">فیلتر محصولات</h2>
+                        <div class="filter-group">
+                            <h3 class="filter-group__title">دسته‌بندی</h3>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-option__input">
+                                <span class="filter-option__text">دیجیتال و گجت</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-option__input">
+                                <span class="filter-option__text">خانه و سبک زندگی</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-option__input">
+                                <span class="filter-option__text">لوازم شخصی</span>
+                            </label>
+                        </div>
+                        <div class="filter-group">
+                            <h3 class="filter-group__title">محدوده قیمت</h3>
+                            <label class="filter-option">
+                                <input type="radio" name="price" class="filter-option__input">
+                                <span class="filter-option__text">کمتر از ۲ میلیون</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="price" class="filter-option__input">
+                                <span class="filter-option__text">۲ تا ۵ میلیون</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="price" class="filter-option__input">
+                                <span class="filter-option__text">بیشتر از ۵ میلیون</span>
+                            </label>
+                        </div>
+                        <div class="filter-group">
+                            <h3 class="filter-group__title">امتیاز کاربران</h3>
+                            <label class="filter-option">
+                                <input type="checkbox" class="filter-option__input">
+                                <span class="filter-option__text">۴ ستاره به بالا</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+                <section class="products-section">
+                    <div class="search-box">
+                        <input type="text" class="search-box__input" placeholder="جست‌وجو در محصولات...">
+                    </div>
+                    <div class="products-toolbar">
+                        <span class="products-toolbar__count">نمایش ۶ محصول</span>
+                        <div class="sort-box">
+                            <span class="sort-box__label">مرتب‌سازی:</span>
+                            <select class="sort-box__select">
+                                <option value="popular">پرفروش‌ترین</option>
+                                <option value="newest">جدیدترین</option>
+                                <option value="cheapest">ارزان‌ترین</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="products-grid">
+                        <article class="product-card">
+                            <a href="./product.html" class="product-card__link">
+                                <div class="product-card__image-box">
+                                    <img src="./assets/headphone-main.png" alt="هدفون بی‌سیم آریا" class="product-card__image">
+                                </div>
+                                <div class="product-card__content">
+                                    <span class="product-card__badge">ارسال رایگان</span>
+                                    <h3 class="product-card__title">هدفون بی‌سیم آریا</h3>
+                                    <div class="product-card__footer">
+                                        <span class="product-card__rating">۴.۷ ★</span>
+                                        <span class="product-card__price">۲,۴۹۰,۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="product-card">
+                            <a href="./product.html" class="product-card__link">
+                                <div class="product-card__image-box">
+                                    <img src="./assets/headphone-main.png" alt="ساعت هوشمند نُوا" class="product-card__image">
+                                </div>
+                                <div class="product-card__content">
+                                    <span class="product-card__badge">ارسال رایگان</span>
+                                    <h3 class="product-card__title">ساعت هوشمند نُوا</h3>
+                                    <div class="product-card__footer">
+                                        <span class="product-card__rating">۴.۵ ★</span>
+                                        <span class="product-card__price">۳,۹۹۰,۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="product-card">
+                            <a href="./product.html" class="product-card__link">
+                                <div class="product-card__image-box">
+                                    <img src="./assets/headphone-main.png" alt="دوربین چاپ فوری" class="product-card__image">
+                                </div>
+                                <div class="product-card__content">
+                                    <span class="product-card__badge">ارسال رایگان</span>
+                                    <h3 class="product-card__title">دوربین چاپ فوری</h3>
+                                    <div class="product-card__footer">
+                                        <span class="product-card__rating">۴.۸ ★</span>
+                                        <span class="product-card__price">۵,۷۹۰,۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="product-card">
+                            <a href="./product.html" class="product-card__link">
+                                <div class="product-card__image-box">
+                                    <img src="./assets/headphone-main.png" alt="کیبورد مکانیکی" class="product-card__image">
+                                </div>
+                                <div class="product-card__content">
+                                    <h3 class="product-card__title">کیبورد مکانیکی</h3>
+                                    <div class="product-card__footer">
+                                        <span class="product-card__rating">۴.۶ ★</span>
+                                        <span class="product-card__price">۱,۸۹۰,۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="product-card">
+                            <a href="./product.html" class="product-card__link">
+                                <div class="product-card__image-box">
+                                    <img src="./assets/headphone-main.png" alt="اسپیکر قابل حمل" class="product-card__image">
+                                </div>
+                                <div class="product-card__content">
+                                    <h3 class="product-card__title">اسپیکر قابل حمل</h3>
+                                    <div class="product-card__footer">
+                                        <span class="product-card__rating">۴.۳ ★</span>
+                                        <span class="product-card__price">۱,۴۵۰,۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="product-card">
+                            <a href="./product.html" class="product-card__link">
+                                <div class="product-card__image-box">
+                                    <img src="./assets/headphone-main.png" alt="ماگ سفری استیل" class="product-card__image">
+                                </div>
+                                <div class="product-card__content">
+                                    <h3 class="product-card__title">ماگ سفری استیل</h3>
+                                    <div class="product-card__footer">
+                                        <span class="product-card__rating">۴.۴ ★</span>
+                                        <span class="product-card__price">۸۹۰,۰۰۰ تومان</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__info">
+                <p class="footer__text">بازارینو؛ خرید ساده و مطمئن</p>
+            </div>
+            <ul class="footer__links">
+                <li class="footer__link-item"><a href="#" class="footer__link">پشتیبانی</a></li>
+                <li class="footer__link-item"><a href="#" class="footer__link">قوانین و شرایط</a></li>
+                <li class="footer__link-item"><a href="#" class="footer__link">اینستاگرام</a></li>
+            </ul>
+            <div class="footer__copyright">
+                <p class="footer__copy-text">© ۱۴۰۵</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
